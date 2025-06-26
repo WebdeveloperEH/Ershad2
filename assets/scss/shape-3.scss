@@ -1,0 +1,19 @@
+// Utilities ( Import Utilities )
+@import "utilities/_mixins";
+
+.bg-shape {
+    @include ease3;
+    padding-bottom: 160px;
+    clip-path: polygon(0 calc(100% - 80px), 0 0, 100% 0, 100% calc(100% - 80px), 50% 100%);
+    -webkit-clip-path: polygon(0 calc(100% - 80px), 0 0, 100% 0, 100% calc(100% - 80px), 50% 100%);
+}
+.bg-shape-hero {
+    @include ease3;
+    clip-path: polygon(0 calc(100% - 80px), 0 0, 100% 0, 100% calc(100% - 80px), 50% 100%);
+    -webkit-clip-path: polygon(0 calc(100% - 80px), 0 0, 100% 0, 100% calc(100% - 80px), 50% 100%);
+}
+@media only screen and (max-width: 767px) {
+    .bg-shape {
+        padding-bottom: 150px !important;
+    }
+}
